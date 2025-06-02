@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انرژی مکانیکی نوسانگر - سوالات و آزمون</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']], // For inline formulas like $E=mc^2$
+                displayMath: [['$$', '$$'], ['\\[', '\\]']], // For block formulas like $$E=mc^2$$
+                processEscapes: true // Allows for escaped dollar signs
+            },
+            svg: {
+                fontCache: 'global' // For better performance
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 md:p-8 my-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-2">انرژی مکانیکی نوسانگر</h1>
+            <p class="text-gray-600 text-lg">استخر سوالات و آزمون برای تعمیق درک مفاهیم فیزیک</p>
+        </header>
+
+        <section id="question-pool-section" class="mb-12">
+            <h2 class="section-title">الف) استخر سوالات</h2>
+            <p class="text-gray-700 text-center mb-6">این بخش شامل مجموعه‌ای جامع از سوالات تستی و تشریحی با توضیحات
+                تفصیلی و سطح‌بندی بلوم است.</p>
+
+            <div class="card">
+                <h3 class="subsection-title">سوالات تستی</h3>
+                <div id="mcq-pool-questions">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="subsection-title">سوالات تشریحی</h3>
+                <div id="essay-pool-questions">
+                </div>
+            </div>
+        </section>
+
+        <section id="test-section">
+            <h2 class="section-title">ب) آزمون متوسط</h2>
+            <p class="text-gray-700 text-center mb-6">این آزمون شامل سوالات تستی و تشریحی با بارم‌بندی مشخص است.
+                پاسخ‌های خود را با دقت وارد کنید.</p>
+
+            <div class="card">
+                <p class="text-gray-800 text-left mb-4">**نام و نام خانوادگی:**
+                    ..................................................................... **تاریخ:**
+                    .....................................................................</p>
+                <h3 class="subsection-title">سوالات تستی (۴ نمره - هر سوال ۱ نمره)</h3>
+                <form id="test-form">
+                    <div id="mcq-test-questions">
+                    </div>
+
+                    <button type="button" onclick="checkAnswers()"
+                        class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl transition duration-300 ease-in-out">
+                        بررسی پاسخ‌ها
+                    </button>
+                    <div id="score-result" class="score-display hidden"></div>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3 class="subsection-title">سوالات تشریحی (۱۶ نمره)</h3>
+                <div id="essay-test-questions">
+                </div>
+            </div>
+
+            <div class="card answer-key">
+                <h3 class="subsection-title !border-r-4 !border-green-600 !text-green-800">ج) کلید پاسخ آزمون</h3>
+                <p class="font-bold mb-2">سوالات تستی:</p>
+                <ul id="test-mcq-answer-key" class="list-disc list-inside">
+                </ul>
+                <p class="font-bold mt-4 mb-2">سوالات تشریحی (پاسخ‌های کامل در بخش استخر سوالات موجود است):</p>
+                <ul id="test-essay-answer-key" class="list-disc list-inside">
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="data/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

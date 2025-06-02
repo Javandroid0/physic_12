@@ -1,0 +1,118 @@
+/* Custom styles for better readability and aesthetics */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    /* Light gray background */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    /* text-2xl */
+    font-weight: 700;
+    /* font-bold */
+    color: #1f2937;
+    /* Gray-900 */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #e5e7eb;
+    /* Border-gray-200 */
+    padding-bottom: 0.75rem;
+}
+
+.subsection-title {
+    font-size: 1.25rem;
+    /* text-xl */
+    font-weight: 600;
+    /* font-semibold */
+    color: #374151;
+    /* Gray-700 */
+    margin-bottom: 1rem;
+    border-right: 4px solid #3b82f6;
+    /* Blue-500 border */
+    padding-right: 0.5rem;
+}
+
+.question-text {
+    font-size: 1.125rem;
+    /* text-lg */
+    font-weight: 500;
+    /* font-medium */
+    color: #1f2937;
+    /* Gray-900 */
+    margin-bottom: 0.75rem;
+}
+
+.option-label {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    /* Gray-50 */
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.option-label:hover {
+    background-color: #e5e7eb;
+    /* Gray-200 */
+}
+
+.explanation {
+    background-color: #eff6ff;
+    /* Blue-50 */
+    border-right: 4px solid #60a5fa;
+    /* Blue-400 */
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    color: #1e40af;
+    /* Blue-800 */
+    font-size: 0.95rem;
+}
+
+.bloom-level {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: #6b7280;
+    /* Gray-500 */
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.answer-key {
+    background-color: #d1fae5;
+    /* Green-100 */
+    border-right: 4px solid #34d399;
+    /* Green-500 */
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-top: 1.5rem;
+    color: #065f46;
+    /* Green-800 */
+    font-weight: 600;
+}
+
+.score-display {
+    background-color: #fffbeb;
+    /* Yellow-50 */
+    border-right: 4px solid #fcd34d;
+    /* Yellow-400 */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #92400e;
+    /* Yellow-900 */
+}
