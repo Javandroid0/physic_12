@@ -13,6 +13,9 @@ function loadQuestions() {
     const essayTestContainer = document.getElementById('essay-test-questions');
     const testMcqAnswerKey = document.getElementById('test-mcq-answer-key');
     const testEssayAnswerKey = document.getElementById('test-essay-answer-key');
+    const textbookContainer = document.getElementById('textbook-supplementary');
+    const teacherGuideContainer = document.getElementById('teacher-guide-supplementary');
+    const hallidayContainer = document.getElementById('halliday-supplementary');
 
     questionsData.forEach(q => {
         if (q.type === 'mcq-pool') {
@@ -66,6 +69,27 @@ function loadQuestions() {
             `;
             // Add to answer key
             testEssayAnswerKey.innerHTML += `<li>**${q.text.split('.')[0]}.** پاسخ: به بخش استخر سوالات تشریحی، سوال ${q.text.split('.')[0]} مراجعه کنید.</li>`;
+        }else if (q.type === 'supplementary-textbook') {
+            textbookContainer.innerHTML += `
+                <div class="mb-4">
+                    <p class="question-text font-semibold">${q.title}</p>
+                    <p class="text-gray-800">${q.content}</p>
+                </div>
+            `;
+        } else if (q.type === 'supplementary-teacher-guide') {
+            teacherGuideContainer.innerHTML += `
+                <div class="mb-4">
+                    <p class="question-text font-semibold">${q.title}</p>
+                    <p class="text-gray-800">${q.content}</p>
+                </div>
+            `;
+        } else if (q.type === 'supplementary-halliday') {
+            hallidayContainer.innerHTML += `
+                <div class="mb-4">
+                    <p class="question-text font-semibold">${q.title}</p>
+                    <p class="text-gray-800">${q.content}</p>
+                </div>
+            `;
         }
     });
 
